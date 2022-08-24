@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="FoodTableViewCell" customModule="DemoRX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Z2B-qi-TqF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CX0-oq-owM">
+                                <rect key="frame" x="0.0" y="0.0" width="98" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CX0-oq-owM" secondAttribute="height" multiplier="1:1" id="koq-Hm-76B"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmk-sZ-94J">
+                                <rect key="frame" x="113" y="0.0" width="207" height="98"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Z2B-qi-TqF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2tp-Wa-UX6"/>
+                    <constraint firstAttribute="bottom" secondItem="Z2B-qi-TqF" secondAttribute="bottom" id="BGu-rU-cb9"/>
+                    <constraint firstItem="Z2B-qi-TqF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jaW-hG-14b"/>
+                    <constraint firstAttribute="trailing" secondItem="Z2B-qi-TqF" secondAttribute="trailing" id="sZ4-OU-PUf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageFood" destination="CX0-oq-owM" id="340-2u-RLG"/>
+                <outlet property="lbFood" destination="hmk-sZ-94J" id="0Wi-Sq-0yP"/>
+            </connections>
+            <point key="canvasLocation" x="123.07692307692307" y="-24.881516587677723"/>
+        </tableViewCell>
+    </objects>
+</document>
